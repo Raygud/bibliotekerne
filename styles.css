@@ -4,6 +4,11 @@
     list-style: none;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 
 @font-face {
     font-family: FrontFont;
@@ -54,7 +59,7 @@ li{
 #searchbackground{
     position: relative;
     width: 100%;
-    height: 540px;
+    height: 30vw;
     background-size:cover; 
   background-position:center; 
   background-repeat:no-repeat; 
@@ -80,8 +85,8 @@ li{
     position: relative;
     width: 80vw;
     height: 380px;
-    background-color: aqua;
     margin: 2vw 10vw 0 10vw;
+    margin-bottom: 2vw;
     
 }
 
@@ -89,7 +94,6 @@ li{
     position: absolute;
     width: 50vw;
     height: 100%;
-    background-color: rgb(162, 0, 255);
 }
 
 #NewsTime > article > img{
@@ -118,18 +122,15 @@ li{
     right: 0;
     width: 20vw;
     height: 100%;
-    background-color: rgb(72, 255, 0);
 }
 
 #NewsTime > #Hours > h2{
     width: 15vw;
-    background-color: violet;
     margin: 2vw auto 2vw auto;
 }
 
 #NewsTime > #Hours > ol > li{
     width: 15vw;
-    background-color: violet;
     margin: auto;
 }
 
@@ -279,3 +280,693 @@ footer > ol > li{
     border-color: whitesmoke;
 }
 
+
+
+
+h4{
+    font-size: 4vw;
+    margin-left: 10.5vw;
+}
+
+#RandBook{
+    width: 85vw;
+    height: 28vw;
+    text-align: center;
+    margin: auto;
+    border-bottom: solid;
+    overflow: hidden;
+}
+
+#RandBook > button{
+    margin-bottom: 0.5vw;
+}
+
+#RandBook > h3{
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+#RandBook > div{
+    font-size: 2vw;
+    height: 20vw;
+    width: 15vw;
+    margin: auto;
+}
+
+#PopularGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 10vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#PopularGrid > div{
+    position: relative;
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+
+#PopularGrid > div:nth-child(1) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 rgb(242, 255, 96);
+    background-color: rgb(255,215,0);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div:nth-child(2) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 	rgb(192,192,192);
+    background-color: 	rgb(233, 233, 233);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div:nth-child(3) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 rgb(205, 127, 50);
+    background-color: rgb(218, 147, 75);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#PopularGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+#CrimeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#CrimeGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#CrimeGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#CrimeGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+
+#FantasyGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#FantasyGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#FantasyGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#FantasyGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+
+#NewGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#NewGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#NewGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#NewGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+ /* --------------------------------------MOBILE-------------------------------------- */
+/* --------------------------------------MOBILE-------------------------------------- */
+
+
+@media (max-width: 480px) {
+
+
+nav{
+    position: relative;
+    background-color: lightgrey;
+    width: 100%;
+    height: 8vw;
+}
+
+nav > a > img{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 7vw;
+    height: 7vw;
+    margin: 0.5vw 0 0.5vw 0.5vw;
+}
+
+nav > ol{
+    display: none;
+    position: absolute;
+    list-style: none;
+    left: 10%;
+    bottom: 0;
+}
+
+nav > ol > a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: lime;
+    width: 11vw;
+    padding: 0 0.2vw 0.2vw 0.2vw;
+    margin-left: 2vw;
+    text-align: center;
+    font-size: 1.8VW;
+}
+
+nav > ol > a > li{
+}
+
+li{
+}
+
+#searchbackground{
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    background-size:cover; 
+  background-position:center; 
+  background-repeat:no-repeat; 
+  background-image:url('imgs/1.jpg');
+}
+
+#searchbackground > h1{
+    padding-left: 30vw;
+    padding-top: 5vw;
+    font-size: 5vw;
+    font-family: "FrontFont";
+    text-shadow: 0.3vw 0.3vw #ffffff;
+}
+
+#SliderSearch{
+    position: absolute;
+    width: 40px;
+    bottom: 40px;
+    left: 23%;
+}
+
+#NewsTime{
+    position: relative;
+    width: 80%;
+    height: 380px;
+    margin: 2vw 10vw 0 10vw;
+    margin-bottom: 2vw;
+    
+}
+
+#NewsTime > article{
+    position: absolute;
+    width: 50vw;
+    height: 100%;
+}
+
+#NewsTime > article > img{
+    width: 100%;
+    height: 100%;
+}
+
+#NewsTime > article > h2{
+    position: absolute;
+    bottom: 13vw;
+    font-size: 4vw;
+    color: white;
+    left: 2vw;
+}
+
+#NewsTime > article > p{
+    position: absolute;
+    bottom: 2vw;
+    font-size: 2vw;
+    color: white;
+    left: 2vw;
+}
+
+#NewsTime > #Hours{
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    height: 100%;
+}
+
+#NewsTime > #Hours > h2{
+    width: 15vw;
+    margin: 2vw auto 2vw auto;
+}
+
+#NewsTime > #Hours > ol > li{
+    width: 15vw;
+    margin: auto;
+}
+
+#NewsTime > #Hours > ol > li{
+    font-size: 2vw;
+}
+
+#Trending { grid-area: Trend; }
+#SkonLitteratur { grid-area: Skon; }
+#FagLitteratur { grid-area: Fag; }
+#BorneLitteratur { grid-area: Borne; }
+
+#SubjectsGrid{
+    width: 78.6%;
+      margin: auto;
+    height: 405px;
+    background-color: tomato;
+    display: grid;
+  grid-template-areas:"Trend"
+                      "Skon"
+                      "Fag"
+                      "Borne";
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#SubjectsGrid > div{
+    position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#SubjectsGrid > div > .SubjectsGridTitle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3vw;
+   background-color: violet;
+  }
+
+  #SubjectsGrid > div > .SubjectsGridTitle > ol{
+    margin-top: 78px;
+  }
+
+  #SubjectsGrid > div > .SubjectsGridTitle > ol > li{
+    text-align: left;
+  }
+
+  #maps{
+      width: 80%;
+      margin: auto;
+  }
+
+  #a { grid-area: a; }
+  #b { grid-area: b; }
+  #c { grid-area: c; }
+  #d { grid-area: d; }
+
+  footer{display: grid;
+    grid-template-areas:"a"
+                        "b"
+                        "c"
+                        "d";
+    grid-gap: 10px;
+    background-color: grey;
+      margin-top: 2vw;
+      width: 100%;
+      height: 13vw;
+      border-top: 0.3vw solid rgba(201, 201, 201, 0.548);
+  }
+
+  footer > ol{
+    position: relative;
+  text-align: center;
+  font-size: 5vw;
+  background-color: lawngreen;
+  border-left: 0.3vw solid rgba(201, 201, 201, 0.548);
+
+}
+
+footer > ol:nth-child(1){
+    border-left: 0vw solid rgba(201, 201, 201, 0.548);
+
+  text-align: center;
+  padding-left: 0;
+}
+
+
+
+footer > ol > li{
+    margin-left: 1vw;
+}
+
+#SignUpInn{
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 2vw;
+}
+
+#SignUp { grid-area: SignUp; }
+#SignInn { grid-area: SignInn; }
+
+#SignUpInn{display: grid;
+  grid-template-areas:"SignUp SignInn";
+  grid-gap: 10px;
+  padding: 10px;
+    margin-top: 2vw;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 25vw;
+}
+
+
+#SignUpInn > form{
+    width: 10vw;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #SignUpInn > form > input{
+      display: block;
+      width: 25vw;
+      margin-top: 2vw;
+      margin-left: 2vw;
+      font-size: 1.3vw;
+      border-radius: 4px;
+}
+
+#SignUpInn > form > button{
+    display: block;
+    width: 12.5vw;
+    margin-top: 0.5vw;
+    margin-left: 14.75vw;
+    font-size: 1.3vw;
+  
+}
+
+#SignUpInn > form > h3{
+    display: block;
+    width: 25vw;
+    margin-left: 2vw;
+    font-size: 3vw;
+    color: rgba(53, 53, 53, 0.687);
+  
+}
+
+#SignInn{
+    border-left-style: solid;
+    border-color: whitesmoke;
+}
+
+
+
+
+h4{
+    font-size: 4vw;
+    margin-left: 10.5vw;
+}
+
+#RandBook{
+    width: 85vw;
+    height: 28vw;
+    text-align: center;
+    margin: auto;
+    border-bottom: solid;
+    overflow: hidden;
+}
+
+#RandBook > button{
+    margin-bottom: 0.5vw;
+}
+
+#RandBook > h3{
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+#RandBook > div{
+    font-size: 2vw;
+    height: 20vw;
+    width: 15vw;
+    margin: auto;
+}
+
+#PopularGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 10vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#PopularGrid > div{
+    position: relative;
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+
+#PopularGrid > div:nth-child(1) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 rgb(242, 255, 96);
+    background-color: rgb(255,215,0);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div:nth-child(2) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 	rgb(192,192,192);
+    background-color: 	rgb(233, 233, 233);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div:nth-child(3) > div{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    bottom: 0.5vw;
+    height: 4vw;
+    width: 20vw;
+    box-shadow: 1vw 0 4vw 0 rgb(205, 127, 50);
+    background-color: rgb(218, 147, 75);
+    transform: rotate(-45deg);
+}
+
+#PopularGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#PopularGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+#CrimeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#CrimeGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#CrimeGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#CrimeGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+
+#FantasyGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#FantasyGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#FantasyGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#FantasyGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+
+#NewGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 0 0 5vw 10vw;
+    border-bottom: solid;
+    padding-bottom: 2vw;
+}
+
+#NewGrid > div{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    margin: 0.4vw;
+    overflow: hidden;
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+#NewGrid > div > img{
+    height: 20vw;
+    display: grid;
+    background-color: brown;
+    overflow: hidden;
+}
+
+#NewGrid > div:hover{
+    transform: scale(1.1);
+    margin-right: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.413) 2.1vw 2vw 0.1vw;
+}
+
+  }
+
+  /* --------------------------------------MOBILE-------------------------------------- */
+ /* --------------------------------------MOBILE-------------------------------------- */
