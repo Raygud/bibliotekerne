@@ -9,7 +9,7 @@
     <title>Aalborg Bibliotekerne</title>
 </head>
 <body>
-    <nav>
+    <nav id="drop">
         <a href="Index.html"><img src="/Imgs/rex4.png" alt=""></a>
 
         <ol>
@@ -20,7 +20,11 @@
             <a href=""><li>Info</li></a>
             <a href="SignUp.html"><li>Login</li></a>
         </ol>
-
+        <div id="Burger" onclick="burger()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
     
     <div id="searchbackground">
@@ -29,26 +33,22 @@
     </div>
 
     <div id="NewsTime">
-        <article>
-            <img src="imgs/rex4.png" alt="" >
-            <h2>Nyhed</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolor quo ipsam, quaerat tempore quidem minus iste ab, quod possimus modi cumque nam. Sed fugiat quisquam quibusdam nulla tempora quidem.</p>
-            </article>
-
-            <div id="Hours">
-                <h2 id="CurrentDayTime">Åbner om:</h2>
-                <ol>
-                    <li id="CurrentHour"></li>
-                    <li>Åbningstider:</li>
-                    <li>mandag	08–21</li>
-                    <li>tirsdag	08–21</li>
-                    <li>onsdag	08–21</li>
-                    <li>torsdag	08–21</li>
-                    <li>fredag	08–18</li>
-                    <li>lørdag	09–17</li>
-                    <li>søndag	10–17</li>
-                </ol>
-            </div>
+        <div id="News">
+        <img src="/Imgs/rex4.png" alt="">
+        <h2>Nyhed Titel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi id ea! Aliquam omnis deserunt vel eveniet magni vitae error cupiditate similique consequatur. Ab magnam similique corrupti, illo explicabo quia!</p>
+    </div>
+        <div id="Time">
+            <ol>
+                <li>mandag	08–21</li>
+                <li>tirsdag	08–21</li>
+                <li>onsdag	08–21</li>
+                <li>torsdag	08–21</li>
+                <li>fredag	08–18</li>
+                <li>lørdag	09–17</li>
+                <li>søndag	10–17</li>
+            </ol>
+        </div>
     </div>
 
     <div id="SubjectsGrid">

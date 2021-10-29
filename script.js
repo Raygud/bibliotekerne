@@ -12,7 +12,7 @@
 // let day = d.getDay()
 // DayOfTheWeekWrite = DayOfTheWeek[day-1]
 // document.getElementById("CurrentDayTime").innerHTML = "Åbner om:";
-
+let dropstatus = 0;
 let rand;
 function generateRandomIntegerInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -102,5 +102,31 @@ for (i = 0; i <= 11 ; i++) {
     book = books[(rand -1)]
     ElId = "New" + (i +1)
     document.getElementById(ElId).style.backgroundImage = "url(Imgs/BookCovers/" + book + ".jpeg)";
+}
+
+function burger(){
+    switch(dropstatus) {
+        case 0:
+            burgerdrop()
+            dropstatus = 1
+            console.log(dropstatus)
+          break;
+        case 1:
+            burgerup()
+            dropstatus = 0
+            console.log(dropstatus)
+          break;
+        default:
+      }
+}
+
+
+function burgerdrop() {
+document.getElementById("drop").style.height = "80vw";
+}
+
+function burgerup(){
+    document.getElementById("drop").style.height = "8vw";
+    dropstatus = 1
 }
   

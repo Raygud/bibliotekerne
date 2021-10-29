@@ -19,9 +19,10 @@ img{
 
 nav{
     position: relative;
-    background-color: lightgrey;
+    background-color: rgb(164, 164, 164);
     width: 100%;
     height: 8vw;
+    transition: 1s ease-in-out;
 }
 
 nav > a > img{
@@ -42,7 +43,7 @@ nav > ol{
 nav > ol > a{
     display: inline-block;
     text-decoration: none;
-    background-color: lime;
+    color: rgb(255, 255, 255);
     width: 11vw;
     padding: 0 0.2vw 0.2vw 0.2vw;
     margin-left: 2vw;
@@ -52,6 +53,42 @@ nav > ol > a{
 
 nav > ol > a > li{
 }
+
+#Burger{
+position: absolute;
+width: 10vw;
+height: 10vw;
+right: 1vw;
+visibility: hidden;
+
+}
+
+
+#Burger > div{
+    position: absolute;
+    top: 0.5vw;
+    width: 100%;
+    height: 1.5vw;
+    background-color: rgb(26, 26, 26);
+}
+
+#Burger > div:nth-child(1){
+    position: absolute;
+    width: 100%;
+    margin-top: 3vw;
+    height: 1.5vw;
+    background-color: rgb(46, 46, 46);
+}
+
+#Burger > div:nth-child(2){
+    position: absolute;
+    width: 100%;
+    margin-top: 5.5vw;
+    height: 1.5vw;
+    background-color: rgb(16, 16, 16);
+}
+
+
 
 li{
 }
@@ -81,62 +118,70 @@ li{
     left: 23%;
 }
 
+#News { grid-area: News; }
+#Time { grid-area: Time; }
+
 #NewsTime{
-    position: relative;
     width: 80vw;
-    height: 380px;
-    margin: 2vw 10vw 0 10vw;
-    margin-bottom: 2vw;
+    height: 33vw;
+    margin: 5vw auto 5vw auto;
+    display: grid;
+  grid-template-areas:"News Time";
+  background-color: rgba(128, 128, 128, 0.139);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+#NewsTime > div{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    height: 30vw;
+    width: 40vw;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+#NewsTime > div:nth-child(1){
     
 }
 
-#NewsTime > article{
+#NewsTime > div > h2{
     position: absolute;
-    width: 50vw;
-    height: 100%;
-}
-
-#NewsTime > article > img{
-    width: 100%;
-    height: 100%;
-}
-
-#NewsTime > article > h2{
-    position: absolute;
-    bottom: 13vw;
-    font-size: 4vw;
     color: white;
-    left: 2vw;
+    left: 4vw;
 }
 
-#NewsTime > article > p{
+#NewsTime > div > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#NewsTime > div > p{
     position: absolute;
     bottom: 2vw;
-    font-size: 2vw;
+    left: 0;
     color: white;
-    left: 2vw;
 }
 
-#NewsTime > #Hours{
+#NewsTime > div > p{
     position: absolute;
-    right: 0;
-    width: 20vw;
-    height: 100%;
+    bottom: 2vw;
+    left: 0;
+    color: white;
 }
 
-#NewsTime > #Hours > h2{
-    width: 15vw;
-    margin: 2vw auto 2vw auto;
+#Time > ol{
+    margin-top: 5vw;
+    margin-left: 17vw;
+    border-left: solid;
+    border-color: rgba(128, 128, 128, 0.507);
 }
 
-#NewsTime > #Hours > ol > li{
-    width: 15vw;
-    margin: auto;
-}
 
-#NewsTime > #Hours > ol > li{
-    font-size: 2vw;
-}
+
 
 #Trending { grid-area: Trend; }
 #SkonLitteratur { grid-area: Skon; }
@@ -147,16 +192,18 @@ li{
     width: 78.6%;
       margin: auto;
     height: 405px;
-    background-color: tomato;
     display: grid;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.418);
   grid-template-areas:"Trend Skon Fag Borne";
   grid-gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 #SubjectsGrid > div{
     position: relative;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.418);
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
@@ -168,7 +215,7 @@ li{
     top: 0;
     width: 100%;
     height: 3vw;
-   background-color: violet;
+   background-color: rgba(99, 99, 99, 0.37);
   }
 
   #SubjectsGrid > div > .SubjectsGridTitle > ol{
@@ -220,6 +267,11 @@ footer > ol:nth-child(1){
 
 footer > ol > li{
     margin-left: 1vw;
+}
+
+footer > ol > a{
+    text-decoration: none;
+    color: black;
 }
 
 #SignUpInn{
@@ -491,6 +543,7 @@ h4{
 
 @media (max-width: 480px) {
 
+    
 
 nav{
     position: relative;
@@ -532,6 +585,14 @@ nav > ol > a > li{
 li{
 }
 
+#Burger{
+    visibility: visible;
+    }
+
+    #Burger:hover{
+        height: 60vw;
+        }
+
 #searchbackground{
     position: relative;
     width: 100%;
@@ -552,67 +613,72 @@ li{
 
 #SliderSearch{
     position: absolute;
-    width: 40px;
+    width: 55vw;
     bottom: 40px;
     left: 23%;
 }
 
+#News { grid-area: News; }
+#Time { grid-area: Time; }
+
 #NewsTime{
+    width: 100%;
+    display: grid;
+  grid-template-areas:"News" 
+                      "Time";
+  background-color: rgba(128, 128, 128, 0);
+}
+
+#NewsTime > div{
     position: relative;
-    width: 80%;
-    height: 380px;
-    margin: 2vw 10vw 0 10vw;
-    margin-bottom: 2vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    height: 30vw;
+    width: 40vw;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+#NewsTime > div:nth-child(1){
     
 }
 
-#NewsTime > article{
+#NewsTime > div > h2{
     position: absolute;
-    width: 50vw;
-    height: 100%;
-}
-
-#NewsTime > article > img{
-    width: 100%;
-    height: 100%;
-}
-
-#NewsTime > article > h2{
-    position: absolute;
-    bottom: 13vw;
-    font-size: 4vw;
     color: white;
-    left: 2vw;
+    left: 4vw;
+    font-size: 5vw;
 }
 
-#NewsTime > article > p{
+#NewsTime > div > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#NewsTime > div > p{
     position: absolute;
     bottom: 2vw;
-    font-size: 2vw;
+    left: 0;
     color: white;
-    left: 2vw;
+    font-size: 1vw;
 }
 
-#NewsTime > #Hours{
+#NewsTime > div > p{
     position: absolute;
-    right: 0;
-    width: 20vw;
-    height: 100%;
+    bottom: 2vw;
+    left: 0;
+    color: white;
 }
 
-#NewsTime > #Hours > h2{
-    width: 15vw;
-    margin: 2vw auto 2vw auto;
+#Time > ol{
+    margin-top: 5vw;
+    margin-left: 17vw;
+    border-left: solid;
+    border-color: rgba(128, 128, 128, 0.507);
 }
 
-#NewsTime > #Hours > ol > li{
-    width: 15vw;
-    margin: auto;
-}
-
-#NewsTime > #Hours > ol > li{
-    font-size: 2vw;
-}
 
 #Trending { grid-area: Trend; }
 #SkonLitteratur { grid-area: Skon; }
@@ -620,17 +686,15 @@ li{
 #BorneLitteratur { grid-area: Borne; }
 
 #SubjectsGrid{
-    width: 78.6%;
+    width: 100%;
       margin: auto;
     height: 405px;
-    background-color: tomato;
     display: grid;
   grid-template-areas:"Trend"
                       "Skon"
                       "Fag"
                       "Borne";
   grid-gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
@@ -659,7 +723,8 @@ li{
   }
 
   #maps{
-      width: 80%;
+      padding-top: 10vw;
+      width: 100%;
       margin: auto;
   }
 
@@ -685,7 +750,8 @@ li{
     position: relative;
   text-align: center;
   font-size: 5vw;
-  background-color: lawngreen;
+  margin-top: 15vw;
+  margin-left: -2vw;
   border-left: 0.3vw solid rgba(201, 201, 201, 0.548);
 
 }
@@ -699,8 +765,8 @@ footer > ol:nth-child(1){
 
 
 
-footer > ol > li{
-    margin-left: 1vw;
+footer > ol > a > li{
+    margin-left: 0;
 }
 
 #SignUpInn{
@@ -716,7 +782,7 @@ footer > ol > li{
   grid-template-areas:"SignUp SignInn";
   grid-gap: 10px;
   padding: 10px;
-    margin-top: 2vw;
+    margin-top: 1vw;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -796,9 +862,10 @@ h4{
 
 #PopularGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     width: 80vw;
+    height: 100vw;
     margin: 0 0 10vw 10vw;
     border-bottom: solid;
     padding-bottom: 2vw;
@@ -806,7 +873,7 @@ h4{
 
 #PopularGrid > div{
     position: relative;
-    height: 20vw;
+    height: 80vw;
     display: grid;
     background-color: brown;
     margin: 0.4vw;
@@ -826,6 +893,17 @@ h4{
     box-shadow: 1vw 0 4vw 0 rgb(242, 255, 96);
     background-color: rgb(255,215,0);
     transform: rotate(-45deg);
+}
+
+#PopularGrid > div:nth-child(5),
+#PopularGrid > div:nth-child(6),
+#PopularGrid > div:nth-child(7),
+#PopularGrid > div:nth-child(8),
+#PopularGrid > div:nth-child(9),
+#PopularGrid > div:nth-child(10),
+#PopularGrid > div:nth-child(11),
+#PopularGrid > div:nth-child(12){
+    display: none;
 }
 
 #PopularGrid > div:nth-child(2) > div{
@@ -853,7 +931,7 @@ h4{
 }
 
 #PopularGrid > div > img{
-    height: 20vw;
+    height: 100%;
     display: grid;
     background-color: brown;
     overflow: hidden;
